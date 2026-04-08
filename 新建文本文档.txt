@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XX班级 - 班级主页</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Microsoft YaHei", sans-serif;
+    }
+
+    body {
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #34495e;
+    }
+
+    .nav-box {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: block;
+    }
+
+    nav a:hover {
+      background-color: #1abc9c;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    section {
+      background: white;
+      border-radius: 8px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 18px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #1abc9c;
+    }
+
+    .info p {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .committee {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 15px;
+    }
+
+    .member {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .notice li {
+      list-style: none;
+      padding: 10px;
+      border-bottom: 1px dashed #eee;
+    }
+
+    .album {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+    }
+
+    .album img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>XX中学 XX级XX班 班级主页</h1>
+    <p>团结奋进 · 勤学善思 · 共创辉煌</p >
+  </header>
+
+  <nav>
+    <div class="nav-box">
+      <a href=" ">班级简介</a >
+      <a href="#committee">班委成员</a >
+      <a href="#notice">通知公告</a >
+      <a href="#album">班级相册</a >
+      <a href="#contact">联系我们</a >
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- 班级简介 -->
+    <section id="info" class="info">
+      <h2>班级简介</h2>
+      <p>本班是一个团结、积极、向上的优秀班集体，现有学生XX人，大家互帮互助，共同进步。</p >
+      <p>在班主任和各科老师的带领下，我们在学习、纪律、文体活动等方面均取得了优异成绩。</p >
+      <p>班级口号：同心同行，追梦不止！</p >
+    </section>
+
+    <!-- 班委成员 -->
+    <section id="committee">
+      <h2>班委成员</h2>
+      <div class="committee">
+        <div class="member">
+          <h4>班长</h4>
+          <p>张三</p >
+        </div>
+        <div class="member">
+          <h4>副班长</h4>
+          <p>李四</p >
+        </div>
+        <div class="member">
+          <h4>学习委员</h4>
+          <p>王五</p >
+        </div>
+        <div class="member">
+          <h4>纪律委员</h4>
+          <p>赵六</p >
+        </div>
+        <div class="member">
+          <h4>文艺委员</h4>
+          <p>钱七</p >
+        </div>
+        <div class="member">
+          <h4>体育委员</h4>
+          <p>孙八</p >
+        </div>
+      </div>
+    </section>
+
+    <!-- 通知公告 -->
+    <section id="notice">
+      <h2>通知公告</h2>
+      <ul class="notice">
+        <li>4月10日 班级春游集合通知，请全体同学准时参加</li>
+        <li>4月15日 期中考试安排，请认真复习</li>
+        <li>4月20日 黑板报评比，请各组积极准备</li>
+        <li>每日按时完成作业，注意考勤与纪律</li>
+      </ul>
+    </section>
+
+    <!-- 班级相册 -->
+    <section id="album">
+      <h2>班级相册</h2>
+      <div class="album">
+        < img src="https://picsum.photos/300/200?random=1" alt="班级活动">
+        < img src="https://picsum.photos/300/200?random=2" alt="班级活动">
+        < img src="https://picsum.photos/300/200?random=3" alt="班级活动">
+        < img src="https://picsum.photos/300/200?random=4" alt="班级活动">
+        < img src="https://picsum.photos/300/200?random=5" alt="班级活动">
+        < img src="https://picsum.photos/300/200?random=6" alt="班级活动">
+      </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact">
+      <h2>联系我们</h2>
+      <p>班主任：XXX老师</p >
+      <p>联系电话：138XXXX1234</p >
+      <p>班级QQ群：XXXXXXXXX</p >
+      <p>班级地址：XX学校XX教学楼XX教室</p >
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 XX班级主页 - 版权所有</p >
+  </footer>
+
+</body>
+</html>
